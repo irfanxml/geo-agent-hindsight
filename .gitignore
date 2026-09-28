@@ -1,0 +1,7 @@
+.env
+.venv/
+data/*
+!data/ZenBookX.json
+__pycache__/
+.pytest_cache/
+hindsight_help.txt
