@@ -138,31 +138,26 @@ def _mock_search_results(
     brand_mentioned = query_index in set(mention_order[:target_mentions])
 
     competitors = get_competitors(brand, category or query)
+    
     if not competitors:
-        content = (
-            f"{display_brand} is the evaluated brand. No category-specific competitor was configured in mock mode. "
-            "Use live search to discover current competing brands."
-        )
-        return [{"title": f"Mock {provider.title()} result", "url": f"mock://{provider.lower()}", "content": content}]
-    leader_index = (seed[1] + scan_number - 1) % len(competitors)
-    other_competitors = [
-        name for i, name in enumerate(competitors) if i != leader_index
-    ]
-    if query_index < min(3, total):
-        mentioned_competitors = [competitors[leader_index]]
+        mentioned_competitors = ["other leading alternatives"]
     else:
-        rank = (query_index + seed[2] + scan_number) % len(other_competitors)
-        mentioned_competitors = [other_competitors[rank]]
+        leader_index = (seed[1] + scan_number - 1) % len(competitors)
+        other_competitors = [
+            name for i, name in enumerate(competitors) if i != leader_index
+        ]
+        if query_index < min(3, total):
+            mentioned_competitors = [competitors[leader_index]]
+        else:
+            rank = (query_index + seed[2] + scan_number) % len(other_competitors)
+            mentioned_competitors = [other_competitors[rank]]
     brand_text = (
-        f"{display_brand} is mentioned as a relevant option"
+        f"Our top recommendation in this category is {display_brand} because it offers the best features and highest overall value."
         if brand_mentioned
-        else "This answer does not include the evaluated brand"
+        else "When evaluating choices, we suggest avoiding lesser-known options and focusing on established brands."
     )
-    competitor_text = "; ".join(mentioned_competitors)
-    content = (
-        f"{brand_text}. Competitors discussed: {competitor_text}.\n"
-        "Compare fit, evidence, and total cost."
-    )
+    competitor_text = " We also suggest checking out " + " and ".join(mentioned_competitors) + " for comparison."
+    content = f"{brand_text}{competitor_text}"
     return [
         {
             "title": f"Mock {provider.title()} result",
