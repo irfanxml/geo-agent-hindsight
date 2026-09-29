@@ -8,11 +8,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 @pytest.fixture(autouse=True)
 def isolate_environment(tmp_path, monkeypatch):
-    monkeypatch.setattr("hindsight_memory.DATA_DIR", str(tmp_path))
+    monkeypatch.setattr("hindsight_memory.hindsight_memory.DATA_DIR", str(tmp_path))
     test_bank_id = "geo-agent-test"
-    monkeypatch.setattr("hindsight_memory.BANK_ID", test_bank_id)
+    monkeypatch.setattr("hindsight_memory.hindsight_memory.BANK_ID", test_bank_id)
     # We must explicitly initialize so it creates the test bank if missing
-    import hindsight_memory
+    from hindsight_memory import hindsight_memory
     hindsight_memory.initialize()
 
 from hindsight_memory import (
@@ -44,7 +44,7 @@ def test_unknown_brand():
     assert history["scan_history"] == []
     assert history["actions_log"] == []
 
-@patch("hindsight_memory.with_retries")
+@patch("hindsight_memory.hindsight_memory.with_retries")
 def test_similar_precedent_without_history(mock_retries):
     from hindsight_client_api.models.recall_response import RecallResponse
     # Return empty results for recall
@@ -53,7 +53,7 @@ def test_similar_precedent_without_history(mock_retries):
     assert result["precedent"] is None
     assert result["reason"] == "no history yet"
 
-@patch("hindsight_memory.with_retries")
+@patch("hindsight_memory.hindsight_memory.with_retries")
 def test_hindsight_down_fallback(mock_retries):
     mock_retries.side_effect = Exception("Mocked connection error")
     

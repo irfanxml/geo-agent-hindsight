@@ -70,9 +70,10 @@ def with_retries(func, *args, **kwargs):
                 raise
             time.sleep(delay)
 
-def wait_after_retain(seconds: int = 5):
-    logger.info(f"Waiting {seconds}s after retain for Hindsight processing...")
-    time.sleep(seconds)
+def wait_after_retain(seconds: int = 0):
+    if seconds > 0:
+        logger.info(f"Waiting {seconds}s after retain for Hindsight processing...")
+        time.sleep(seconds)
 
 def read_mirror(brand: str) -> dict:
     file_path = os.path.join(DATA_DIR, f"{brand}.json")
