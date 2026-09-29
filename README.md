@@ -2,24 +2,38 @@
 
 A single-folder demo of the scan → Hindsight memory → recommendation loop. It combines the AI pipeline, the Hindsight-compatible memory layer, and the React dashboard from the supplied ZIP. The data contracts match the team document and the project brief.
 
-## Start the linked app (Windows PowerShell)
+## 🛠️ Installation Instructions
 
-Python 3.10 or newer and Node.js are recommended. Open two PowerShell terminals in this folder. In the first, start the Python API:
-
-```powershell
+**1. Clone and Setup Backend (Terminal 1)**
+Open a terminal and set up the Python environment:
+```bash
 python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+# On Windows PowerShell: .\.venv\Scripts\Activate.ps1
+# On Mac/Linux: source .venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+**2. Configure API Keys**
+Copy the placeholder environment file to activate the integrations:
+```bash
+cp .env.example .env
+```
+Open `.env` and add your valid `GROQ_API_KEY`, `TAVILY_API_KEY`, and `SERPER_API_KEY`. (Ensure `MOCK_MODE=0` is set if you want real-time live data). To enable remote Hindsight memory, also add your `HINDSIGHT_API_KEY`!
+
+**3. Start the Backend API**
+```bash
 python -m integration.api
 ```
 
-In the second terminal, start the dashboard:
-
-```powershell
+**4. Start the Frontend Dashboard (Terminal 2)**
+Open a *second* terminal window in the project folder and run:
+```bash
 cd frontend
 npm install
 npm run dev
 ```
+Open the local URL printed by Vite (usually `http://localhost:5173`) to view the application!
 
 Open the local URL printed by Vite. You can edit the brand and category, then click **Run visibility scan**. The dashboard calls the Python API, which scans, reads that brand's history, creates a recommendation, and saves the new scan to `hindsight_memory/data/`. The visibility chart, mention rate, competitor ranking, queries, and recommendation all refresh from that response and saved history.
 
@@ -54,3 +68,13 @@ Without a `.env`, the app defaults to mock mode for a no-key preview. Mock scan 
 - `fixtures/`: scan 1, 5, and 10 contract examples.
 
 The supplied ZIP's `.env` files and Python bytecode were left out. Start with `.env.example` if you need live integrations.
+
+## 🧠 Hindsight Integration Explained
+The `hindsight_memory` module forms the underlying "Long-Term Memory" layer for this GEO Agent. It connects to the Vectorize Hindsight API to give the AI context over time rather than treating every scan in a vacuum.
+
+**How it works seamlessly in the pipeline:**
+1. **Persistent Context:** Every time a new brand scan finishes, or a marketing action is logged, it is permanently written into a local JSON mirror and `Hindsight.retain()` is called to index that snippet in a secure Vector Bank.
+2. **AI Action Reflection:** Instead of naively returning random tips, when the Pipeline asks for a recommendation, the memory module runs `find_similar_precedent()`.
+3. **Situational Awareness:** By querying the Hindsight embeddings securely, the module maps the brand's *current visibility deficit* back to historical campaigns across the agency's index. If adding "Schema.org FAQ pages" raised visibility from 20% to 50% last month, Hindsight flags this identical pattern constraint, enabling the Recommendation Agent to synthesize exact, proven strategies.
+
+This provides the GEO Agent with compounding intelligence: the more actions you take, the smarter its next set of actions becomes!
