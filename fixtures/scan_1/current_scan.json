@@ -1,0 +1,18 @@
+{
+  "brand": "Notion",
+  "timestamp": "2026-01-02T00:00:00+00:00",
+  "queries_tested": [
+    "What are the best project management tools for a small team?",
+    "How should a startup choose project management software?"
+  ],
+  "mentions": 0,
+  "total_queries": 2,
+  "competitors_mentioned": {
+    "Asana": 1,
+    "Trello": 1
+  },
+  "raw_snippets": [
+    "Common recommendations include Asana and Trello.",
+    "Teams often compare Trello with other established tools."
+  ]
+}

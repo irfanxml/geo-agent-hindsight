@@ -1,0 +1,55 @@
+{
+  "brand": "Notion",
+  "scan_history": [
+    {
+      "brand": "Notion",
+      "timestamp": "2026-01-02T00:00:00+00:00",
+      "queries_tested": ["What are the best project management tools for a small team?"],
+      "mentions": 0,
+      "total_queries": 1,
+      "competitors_mentioned": {"Asana": 1},
+      "raw_snippets": ["Asana is frequently recommended."]
+    },
+    {
+      "brand": "Notion",
+      "timestamp": "2026-01-03T00:00:00+00:00",
+      "queries_tested": ["How should a startup choose project management software?"],
+      "mentions": 0,
+      "total_queries": 1,
+      "competitors_mentioned": {"Trello": 1},
+      "raw_snippets": ["Trello is frequently recommended."]
+    },
+    {
+      "brand": "Notion",
+      "timestamp": "2026-01-04T00:00:00+00:00",
+      "queries_tested": ["Which project management tools have the best integrations?"],
+      "mentions": 1,
+      "total_queries": 1,
+      "competitors_mentioned": {"Asana": 1},
+      "raw_snippets": ["Notion appeared alongside Asana."]
+    },
+    {
+      "brand": "Notion",
+      "timestamp": "2026-01-05T00:00:00+00:00",
+      "queries_tested": ["What is the easiest project management software to adopt?"],
+      "mentions": 1,
+      "total_queries": 1,
+      "competitors_mentioned": {"Monday.com": 1},
+      "raw_snippets": ["Notion appeared alongside Monday.com."]
+    }
+  ],
+  "actions_log": [
+    {
+      "action": "Publish a general product overview",
+      "date": "2026-01-03T00:00:00+00:00",
+      "outcome_summary": "Traffic increased but AI visibility did not move.",
+      "visibility_delta": 0
+    },
+    {
+      "action": "Publish a customer-use-case comparison page",
+      "date": "2026-01-05T00:00:00+00:00",
+      "outcome_summary": "Brand appeared in two additional category answers.",
+      "visibility_delta": 2
+    }
+  ]
+}

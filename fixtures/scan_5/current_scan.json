@@ -1,0 +1,25 @@
+{
+  "brand": "Notion",
+  "timestamp": "2026-01-06T00:00:00+00:00",
+  "queries_tested": [
+    "What are the best project management tools for a small team?",
+    "How should a startup choose project management software?",
+    "Which project management tools have the best integrations?",
+    "What is the easiest project management software to adopt?",
+    "Which project management products work well for remote teams?"
+  ],
+  "mentions": 3,
+  "total_queries": 5,
+  "competitors_mentioned": {
+    "Asana": 3,
+    "Trello": 2,
+    "Monday.com": 2
+  },
+  "raw_snippets": [
+    "Notion is a strong option for teams that want a focused workflow.",
+    "Asana and Notion are common options for collaborative planning.",
+    "Compare Notion, Trello, and Monday.com for integrations.",
+    "Established tools are often recommended for easy adoption.",
+    "Notion works well for teams that need flexible documentation."
+  ]
+}

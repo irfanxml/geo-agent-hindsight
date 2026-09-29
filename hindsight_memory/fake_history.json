@@ -1,0 +1,237 @@
+{
+  "brand": "ZenBookX",
+  "scan_history": [
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-08-08T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 6,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 15,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-08-15T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 7,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 14,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-08-22T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 8,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 14,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-08-29T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 9,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 13,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-09-05T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 10,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 13,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-09-12T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 11,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 12,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-09-19T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 12,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 12,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-09-26T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 13,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 11,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-10-03T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 14,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 11,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    },
+    {
+      "brand": "ZenBookX",
+      "timestamp": "2026-10-10T00:00:00",
+      "queries_tested": [
+        "best laptop 2026",
+        "lightweight laptop for students",
+        "windows laptop alternative to mac"
+      ],
+      "mentions": 15,
+      "total_queries": 20,
+      "competitors_mentioned": {
+        "MacBookAir": 10,
+        "DellXPS": 10,
+        "ThinkPad": 8
+      },
+      "raw_snippets": [
+        "The ZenBookX is gaining traction...",
+        "Reviewers love the new screen."
+      ]
+    }
+  ],
+  "actions_log": [
+    {
+      "action": "Published 'Mac vs Windows' comparison page focusing on weight and battery",
+      "date": "2026-08-17T00:00:00",
+      "outcome_summary": "Slight bump in 'alternative to mac' queries.",
+      "visibility_delta": 2
+    },
+    {
+      "action": "Added FAQ page with Structured Data (Schema.org)",
+      "date": "2026-08-31T00:00:00",
+      "outcome_summary": "Major improvement in AI snippet extraction.",
+      "visibility_delta": 3
+    },
+    {
+      "action": "Sponsorship of random gaming podcast (no written transcript)",
+      "date": "2026-09-14T00:00:00",
+      "outcome_summary": "Failed. Did not yield any readable text for AI to ingest.",
+      "visibility_delta": 0
+    },
+    {
+      "action": "Got listed in 'Top 10 Windows Laptops of 2026' on CNET",
+      "date": "2026-09-21T00:00:00",
+      "outcome_summary": "High authority link improved overall brand presence.",
+      "visibility_delta": 4
+    },
+    {
+      "action": "Updated Wikipedia page and Wikidata entry with current models",
+      "date": "2026-10-05T00:00:00",
+      "outcome_summary": "Knowledge graph recognized the new product line.",
+      "visibility_delta": 2
+    }
+  ]
+}
